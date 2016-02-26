@@ -1,0 +1,323 @@
+/**********************************************************************************************
+
+	Title: CSS for MOTAC MicroMovie Site
+	Author: Elmo Wu (by xuedesign studio)
+	Author URL: http://www.xuedesign.tw/
+	Version: v1.0 (2015/12)
+
+***********************************************************************************************
+		1 通用
+		2.內容頁
+		   2-1. 基本架構
+		   2-2. 精彩影片+生命故事
+		   2-3. 劇照花絮
+		   2-4. 相關連結
+***********************************************************************************************/
+
+/* 1. 通用 
+===============================================================================================*/
+body{
+	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:22px;
+	color:#513030;
+	background:url(../images/bg_site.jpg) no-repeat fixed}
+a:link {text-decoration:underline; color:#00adee}
+a:visited {text-decoration:underline; color:#8c8c8c}
+a:hover {text-decoration:none; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+::selection {
+   background:#4b4608;
+   color:#fffcdb}
+::-moz-selection {
+   background:#4b4608;
+   color:#fffcdb}
+
+/* 2. 內容頁  
+===============================================================================================*/
+#wrap{
+	display:block;
+	width:1238px;
+	min-width:1280px;
+	margin:0 auto}
+
+/* 2.1 基本架構*/	
+h1 a{
+	display:block;
+	position:absolute;
+	top:31px;
+	left:50px;
+	width:142px;
+	height:146px;
+	background:url(../images/pic_h1.png) no-repeat;
+	text-indent:-9999px}
+footer{
+	clear:both;
+	display:block;
+	position:relative;
+	width:1238px;
+	height:46px;
+	background:url(../images/bg_footer.png) repeat-x;
+	-webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px}
+footer p{
+	text-align:center;
+	font-size:0.813em;
+	color:#fffcdb;
+	margin:0;
+	padding:0;
+	line-height:46px}
+footer .txt_ad{
+	display:block;
+	position:absolute;
+	top:14px;
+	right:48px;
+	width:52px;
+	height:24px;
+	background:url(../images/pic_ad.png) no-repeat;
+	text-indent:-9999px}			
+	
+#box_container{
+	display:block;
+	width:1238px;
+	margin: 15px auto 30px auto;
+	-webkit-box-shadow: 0 0 20px #4E4E4E;
+    -moz-box-shadow: 0 0 20px #4E4E4E;
+    box-shadow: 0 0 20px #4E4E4E;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+	background:url(../images/bg_content.jpg) no-repeat #fff}
+#box_subcontent{
+	display:block;
+	position:relative;
+	width:1238px}
+#bg_city{
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url(../images/bg_city.jpg) no-repeat;
+	width:1238px;
+	height:177px}		
+#box_aside{
+	display:block;
+	position:relative;
+	float:left;
+	z-index:99;
+	width:195px}
+#box_aside ul{
+	display:block;
+	position:absolute;
+	top:210px;
+	left:8px;
+	z-index:99;
+	margin:0;
+	list-style:none}
+#box_aside li a{
+	display: block;
+	width:155px;
+	height:40px;
+	text-indent:-9999px;
+	background:url(../images/btn_nav.png) no-repeat;
+	margin-bottom:20px;
+	list-style:none}	
+#box_aside a.nav_01{ background-position: 0 0}
+#box_aside a.nav_01:hover, #box_aside a.nav_01.navin{ background-position: 0 -40px}
+#box_aside a.nav_02{ background-position: 0 -80px}
+#box_aside a.nav_02:hover, #box_aside a.nav_02.navin{ background-position: 0 -120px}
+#box_aside a.nav_03{ background-position: 0 -160px}
+#box_aside a.nav_03:hover, #box_aside a.nav_03.navin{ background-position: 0 -200px}
+#box_aside a.nav_04{ background-position: 0 -240px}
+#box_aside a.nav_04:hover, #box_aside a.nav_04.navin{ background-position: 0 -280px}
+#box_aside a.nav_05{ background-position: 0 -320px}
+#box_aside a.nav_05:hover{ background-position: 0 -360px}
+#box_airport{
+	display:block;
+	position:absolute;
+	top:480px;
+	left:0;
+	background: url(../images/pic_airport-02.png) no-repeat;
+	width:277px;
+	height:188px}		
+
+#box_pagemain{
+	display:block;
+	position:relative;
+	float:right;
+	width:1028px;
+	padding-top:6px}
+#box_pagemain h2{
+	display:block;
+	width:219px;
+	height:59px;
+	background:url(../images/pic_slogan-02.png) no-repeat;
+	text-indent:-9999px;
+	margin-left:125px}	
+#box_pageinfo{
+	display: block;
+	width:913px;
+	margin:0 auto;
+	background: url(../images/bg_pageinfo.png) repeat-y;
+	-webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0}	
+#bar_title{
+	display:block;
+	width:852px;
+	height:41px;
+	padding:10px 0 0 61px;
+	background: url(../images/bg_pagetitle.png) no-repeat;
+	-webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0}	
+#bar_title h3{
+	display:block;
+	background: url(../images/bg_title.png) no-repeat;
+	width:142px;
+	height:25px;
+	margin:0;
+	text-indent:-9999px}
+#bar_title .ptitle_01{ background-position:0 0}
+#bar_title .ptitle_02{ background-position:0 -25px}
+#bar_title .ptitle_03{ background-position:0 -50px}
+#bar_title .ptitle_04{ background-position:0 -75px}
+
+/* 2.2 精彩影片+生命故事*/	
+#box_main{
+	display:block;
+	width:845px;
+	min-height:470px;
+	margin:30px 30px 1px 30px;
+	padding-bottom:30px}	
+.abgne_tab ul, .abgne_tab li {
+	margin: 0;
+	padding: 0;
+	list-style: none}
+.abgne_tab{
+	clear: left;
+	width: 840px;
+	margin: 10px auto 0}
+.tabs { width: 100%}
+.tabs li a{
+	display:block;
+	float: left; 
+	margin:0 5px;
+	padding:5px 15px;
+	background:#A4BF5F;
+	font-size:.938em;
+	line-height:25px;
+	color:#FFF;
+	text-decoration:none;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px}
+.tabs a:hover, .tabs .active a{ background:#E60683}
+
+.tab_container {
+	clear: left;
+	width: 100%;
+	margin-top:15px;
+	border-top: 2px solid #D8E6E0}
+.tab_container .tab_content {
+	display: block;
+	position:relative;
+	padding: 15px 20px 15px 30px}
+.tab_container .tab_content p, .box_profile p, .box_service p{
+	font-size:0.938em;
+	line-height:24px;
+	padding-left:20px;
+	text-shadow:1px 1px 0 #FFF8F6}
+.float-left{ float:left; margin:20px 20px 20px 0}
+		
+
+/* 2.3 劇照花絮 */	
+#photo_list{
+	display:block;
+	width:840px;
+	margin:0 auto}
+#photo_list li{
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+	margin:0 15px 25px;
+	list-style:none}				 	 	
+
+/* 2.4 相關連結*/
+.box_link ul{
+	display:block;
+	width:845px;
+	margin:0 auto;
+	padding:30px 0 0 0}
+.box_link li{
+	list-style:none;
+	display:block;
+	float:left;
+	width:150px;
+	height:220px;
+	margin:0 10px 0 9px}
+.box_link li h4{
+	font-size:1em;
+	text-align:center;
+	line-height:22px;
+	padding-top:0;
+	text-shadow:1px 1px 0 #FFFCFE}		
+.box_link li a{
+	display:block;
+	width:132px;
+	height:132px;
+	background:url(../images/link_logo.png) no-repeat;
+	text-indent:-9999px;
+	margin:0 auto}
+.box_link li a.logo-01{ background-position:0 0}
+.box_link li a.logo-02{ background-position:0 -132px}	
+.box_link li a.logo-03{ background-position:0 -264px}	
+.box_link li a.logo-04{ background-position:0 -396px}	
+.box_link li a.logo-05{ background-position:0 -528px}	
+.box_link li a.logo-06{ background-position:0 -660px}
+.box_link li a.logo-07{ background-position:0 -792px}	
+
+/*新增動畫效果 #20151203*/	
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;	
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn}  						

@@ -1,0 +1,319 @@
+/**********************************************************************************************
+
+	Title: CSS for TAIWAN AFTER-CARE ASSOCIATION 70Years Site
+	Author: Elmo Wu (by xuedesign studio)
+	Author URL: http://www.xuedesign.tw/
+	Version: v1.0 (2015/12)
+
+***********************************************************************************************
+		1 通用
+		2.首頁
+		   2-1. 頂端列
+		   2-2. 主要內容區塊
+		   2-3. 首頁選單
+		   2-4. 版權列	
+***********************************************************************************************/
+
+/* 1. 通用 
+===============================================================================================*/
+body{
+	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:22px;
+	color:#513030;
+	background:url(../images/bg_site.jpg) repeat}
+a:link {text-decoration:underline; color:#00adee}
+a:visited {text-decoration:underline; color:#8c8c8c}
+a:hover {text-decoration:none; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+::selection {
+   background:#4b4608;
+   color:#fffcdb}
+::-moz-selection {
+   background:#4b4608;
+   color:#fffcdb}
+
+/* 2. 首頁  
+===============================================================================================*/
+#wrap{
+	display:block;
+	width:1238px;
+	min-width:1280px;
+	margin:0 auto}
+#box_index{
+	display:block;
+	width:1238px;
+	background:url(../images/bg_index.png) repeat;
+	margin: 15px auto 0 auto ;
+	-webkit-box-shadow: 0 0 20px #4E4E4E;
+    -moz-box-shadow: 0 0 20px #4E4E4E;
+    box-shadow: 0 0 20px #4E4E4E;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px}
+
+/* 2.1 頂端列 */	
+header{
+	display:block;
+	position:relative;
+	width:1238px;
+	height:89px}
+h1 a{
+	display:block;
+	position:absolute;
+	top:31px;
+	left:50px;
+	width:142px;
+	height:146px;
+	background:url(../images/pic_h1.png) no-repeat;
+	text-indent:-9999px}
+
+/* 2.2 主要內容區塊 */		
+#box_content{
+	display:block;
+	position:relative;
+	width:1240px;
+	height:600px}
+#box_content h2{
+	display:block;
+	position:absolute;
+	top:-80px;
+	right:2px;
+	width:733px;
+	height:194px;
+	background:url(../images/pic_slogan.png) no-repeat;
+	text-indent:-9999px}	
+
+#box_services, #box_man, #box_airport, #box_phonecall{ display:block;	position:absolute; z-index:1}
+#box_services{
+	top:230px;
+	right:22px;
+	background: url(../images/pic_service.png) no-repeat;
+	width:788px;
+	height:293px}
+#box_services ul{
+    display: block;
+    position: relative}
+#box_services li{ list-style: none}
+#box_services li a{
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    text-indent: -9999px}
+#box_services a.play-01{ top:10px; left:110px}
+#box_services a.play-02{ top:100px; left:275px}
+#box_services a.play-03{ top:15px; left:460px}
+#box_services a.play-04{ top:130px; left:620px}
+#box_man{
+	bottom:0;
+	left:0;
+	background: url(../images/pic_man.png) no-repeat;
+	width:472px;
+	height:438px}
+#box_airport{
+	top:-5px;
+	left:0;
+	background: url(../images/pic_airport.png) no-repeat;
+	width:515px;
+	height:324px}
+#box_phonecall{
+	bottom:15px;
+	right:28px;
+	background:url(../images/pic_phonecall.png) no-repeat;
+	width:401px;
+	height:50px}	
+		
+
+/* 2.3 首頁選單 */		
+#box_menu{
+	display:block;
+	position:absolute;
+	top:150px;
+	right:20px;
+	width:700px;
+	height:40px}
+#box_menu ul{ display:block; margin:0; padding:0}
+#box_menu li a{
+	display: block;
+	float:left;
+	width:155px;
+	height:40px;
+	text-indent:-9999px;
+	background:url(../images/btn_nav.png) no-repeat;
+	margin:0 10px}
+#box_menu a.nav_01{ background-position: 0 0}
+#box_menu a.nav_01:hover{ background-position: 0 -40px}
+#box_menu a.nav_02{ background-position: 0 -80px}
+#box_menu a.nav_02:hover{ background-position: 0 -120px}
+#box_menu a.nav_03{ background-position: 0 -160px}
+#box_menu a.nav_03:hover{ background-position: 0 -200px}
+#box_menu a.nav_04{ background-position: 0 -240px}
+#box_menu a.nav_04:hover{ background-position: 0-280px}
+
+/* 2.4 版權列 */					
+footer{
+	clear:both;
+	display:block;
+	position:relative;
+	width:1238px;
+	height:46px;
+	background:url(../images/bg_footer.png) repeat-x;
+	-webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px}
+footer p{
+	text-align:center;
+	font-size:0.813em;
+	color:#fffcdb;
+	margin:0;
+	padding:0;
+	line-height:46px}
+footer .txt_ad{
+	display:block;
+	position:absolute;
+	top:14px;
+	right:48px;
+	width:52px;
+	height:24px;
+	background:url(../images/pic_ad.png) no-repeat;
+	text-indent:-9999px}
+
+/*新增動畫效果 #201512*/
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-delay:1s;
+	animation-delay:1s;	
+   -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;			
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-delay:3s;
+	animation-delay:3s;	
+   -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;	
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown-01{
+  -webkit-animation-delay:5s;
+	animation-delay:5s;	
+   -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+	animation-duration: 1s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+.fadeInDown-02{
+  -webkit-animation-delay:5s;
+	animation-delay:5s;	
+   -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}
+.fadeInDown-03{
+  -webkit-animation-delay:7s;
+	animation-delay:7s;	
+   -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;	
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown}         		  
+
+    
+   
+						

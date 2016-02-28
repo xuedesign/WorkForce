@@ -1,16 +1,16 @@
 /**********************************************************************************************
 
-	Title: CSS for MOTAC MicroMovie Site
+	Title: CSS for Workforce Development Agency Site
 	Author: Elmo Wu (by xuedesign studio)
 	Author URL: http://www.xuedesign.tw/
-	Version: v1.0 (2015/12)
+	Version: v1.0 (2016/02)
 
 ***********************************************************************************************
 		1 通用
 		2.內容頁
 		   2-1. 基本架構
-		   2-2. 精彩影片+生命故事
-		   2-3. 劇照花絮
+		   2-2. 初聘外勞懶人包
+		   2-3. 線上課程
 		   2-4. 相關連結
 ***********************************************************************************************/
 
@@ -21,7 +21,7 @@ body{
 	font-size:100%;
 	line-height:22px;
 	color:#513030;
-	background:url(../images/bg_site.jpg) no-repeat fixed}
+	background:url(../images/bg_site.png) no-repeat fixed}
 a:link {text-decoration:underline; color:#00adee}
 a:visited {text-decoration:underline; color:#8c8c8c}
 a:hover {text-decoration:none; color:#F50}
@@ -49,12 +49,42 @@ image{border:0}
 h1 a{
 	display:block;
 	position:absolute;
-	top:31px;
-	left:50px;
-	width:142px;
-	height:146px;
-	background:url(../images/pic_h1.png) no-repeat;
+	top:28px;
+	left:45px;
+	width:373px;
+	height:80px;
+	background:url(../images/pic_subh1.png) no-repeat;
 	text-indent:-9999px}
+#box_menu{
+	display:block;
+	position:absolute;
+	top:50px;
+	right:24px;
+	border:2px solid #00a1f1;
+	-webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	width:650px;
+	height:25px;
+	padding:10px 10px}
+#box_menu ul{ display:block; margin:0; padding:0}
+#box_menu li{ display: inline-block; list-style: none}
+#box_menu li a{
+	display:block;
+	float:left;
+	height:24px;
+	text-indent:-9999px;
+	background:url(../images/btn_nav.png) no-repeat;
+	margin:0 10px;}
+#box_menu a.nav_01{ width:188px; background-position: 0 0}
+#box_menu a.nav_01:hover{ background-position: 0 -24px}
+#box_menu a.nav_02{ width:145px; background-position: 0 -48px}
+#box_menu a.nav_02:hover{ background-position: 0 -72px}
+#box_menu a.nav_03{ width:125px; background-position: 0 -96px}
+#box_menu a.nav_03:hover{ background-position: 0 -120px}
+#box_menu a.nav_04{ width:85px; background-position: 0 -144px}
+#box_menu a.nav_04:hover{ background-position: 0-168px}
+
 footer{
 	clear:both;
 	display:block;
@@ -92,7 +122,7 @@ footer .txt_ad{
 	-webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-	background:url(../images/bg_content.jpg) no-repeat #fff}
+	background:url(../images/bg_content.png) no-repeat #F2F3F3}
 #box_subcontent{
 	display:block;
 	position:relative;
@@ -102,49 +132,25 @@ footer .txt_ad{
 	position:absolute;
 	bottom:0;
 	left:0;
-	background:url(../images/bg_city.jpg) no-repeat;
+	background:url(../images/bg_city.png) no-repeat;
 	width:1238px;
-	height:177px}		
+	height:160px}		
+
 #box_aside{
 	display:block;
 	position:relative;
 	float:left;
 	z-index:99;
-	width:195px}
-#box_aside ul{
+	width:236px;
+    margin-top:160px }
+#subvision{
 	display:block;
 	position:absolute;
-	top:210px;
-	left:8px;
-	z-index:99;
-	margin:0;
-	list-style:none}
-#box_aside li a{
-	display: block;
-	width:155px;
-	height:40px;
-	text-indent:-9999px;
-	background:url(../images/btn_nav.png) no-repeat;
-	margin-bottom:20px;
-	list-style:none}	
-#box_aside a.nav_01{ background-position: 0 0}
-#box_aside a.nav_01:hover, #box_aside a.nav_01.navin{ background-position: 0 -40px}
-#box_aside a.nav_02{ background-position: 0 -80px}
-#box_aside a.nav_02:hover, #box_aside a.nav_02.navin{ background-position: 0 -120px}
-#box_aside a.nav_03{ background-position: 0 -160px}
-#box_aside a.nav_03:hover, #box_aside a.nav_03.navin{ background-position: 0 -200px}
-#box_aside a.nav_04{ background-position: 0 -240px}
-#box_aside a.nav_04:hover, #box_aside a.nav_04.navin{ background-position: 0 -280px}
-#box_aside a.nav_05{ background-position: 0 -320px}
-#box_aside a.nav_05:hover{ background-position: 0 -360px}
-#box_airport{
-	display:block;
-	position:absolute;
-	top:480px;
+	top:0;
 	left:0;
-	background: url(../images/pic_airport-02.png) no-repeat;
-	width:277px;
-	height:188px}		
+	background: url(../images/pic_subvision.png) no-repeat;
+	width:248px;
+	height:382px}		
 
 #box_pagemain{
 	display:block;
@@ -152,13 +158,6 @@ footer .txt_ad{
 	float:right;
 	width:1028px;
 	padding-top:6px}
-#box_pagemain h2{
-	display:block;
-	width:219px;
-	height:59px;
-	background:url(../images/pic_slogan-02.png) no-repeat;
-	text-indent:-9999px;
-	margin-left:125px}	
 #box_pageinfo{
 	display: block;
 	width:913px;
@@ -169,74 +168,32 @@ footer .txt_ad{
     border-radius: 15px 15px 0 0}	
 #bar_title{
 	display:block;
-	width:852px;
+	width:845px;
 	height:41px;
-	padding:10px 0 0 61px;
-	background: url(../images/bg_pagetitle.png) no-repeat;
-	-webkit-border-radius: 15px 15px 0 0;
-    -moz-border-radius: 15px 15px 0 0;
-    border-radius: 15px 15px 0 0}	
+	padding:10px 0 0 35px}	
 #bar_title h3{
 	display:block;
-	background: url(../images/bg_title.png) no-repeat;
-	width:142px;
-	height:25px;
+	background: url(../images/bg_pagetitle.png) no-repeat;
+	width:222px;
+	height:29px;
 	margin:0;
-	text-indent:-9999px}
+    text-indent:-9999px}
 #bar_title .ptitle_01{ background-position:0 0}
-#bar_title .ptitle_02{ background-position:0 -25px}
-#bar_title .ptitle_03{ background-position:0 -50px}
-#bar_title .ptitle_04{ background-position:0 -75px}
+#bar_title .ptitle_02{ background-position:0 -29px}
+#bar_title .ptitle_03{ background-position:0 -58px}
 
-/* 2.2 精彩影片+生命故事*/	
+/* 2.2 初聘外勞懶人包*/	
 #box_main{
 	display:block;
-	width:845px;
-	min-height:470px;
-	margin:30px 30px 1px 30px;
-	padding-bottom:30px}	
-.abgne_tab ul, .abgne_tab li {
-	margin: 0;
-	padding: 0;
-	list-style: none}
-.abgne_tab{
-	clear: left;
-	width: 840px;
-	margin: 10px auto 0}
-.tabs { width: 100%}
-.tabs li a{
-	display:block;
-	float: left; 
-	margin:0 5px;
-	padding:5px 15px;
-	background:#A4BF5F;
-	font-size:.938em;
-	line-height:25px;
-	color:#FFF;
-	text-decoration:none;
-	-webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px}
-.tabs a:hover, .tabs .active a{ background:#E60683}
+	width:870px;
+	min-height:435px;
+	margin:10px 30px 30px;
+	padding-bottom:30px;
+    border: 1px solid #f22626}	
 
-.tab_container {
-	clear: left;
-	width: 100%;
-	margin-top:15px;
-	border-top: 2px solid #D8E6E0}
-.tab_container .tab_content {
-	display: block;
-	position:relative;
-	padding: 15px 20px 15px 30px}
-.tab_container .tab_content p, .box_profile p, .box_service p{
-	font-size:0.938em;
-	line-height:24px;
-	padding-left:20px;
-	text-shadow:1px 1px 0 #FFF8F6}
-.float-left{ float:left; margin:20px 20px 20px 0}
 		
 
-/* 2.3 劇照花絮 */	
+/* 2.3 線上課程*/	
 #photo_list{
 	display:block;
 	width:840px;
@@ -249,7 +206,7 @@ footer .txt_ad{
 	margin:0 15px 25px;
 	list-style:none}				 	 	
 
-/* 2.4 相關連結*/
+/* 2.4 表單下載*/
 .box_link ul{
 	display:block;
 	width:845px;

@@ -65,10 +65,10 @@ header{
 h1 a{
 	display:block;
 	position:absolute;
-	top:31px;
-	left:50px;
-	width:142px;
-	height:146px;
+	top:28px;
+	left:43px;
+	width:99px;
+	height:135px;
 	background:url(../images/pic_h1.png) no-repeat;
 	text-indent:-9999px}
 
@@ -81,71 +81,57 @@ h1 a{
 #box_content h2{
 	display:block;
 	position:absolute;
-	top:-80px;
-	right:2px;
-	width:733px;
-	height:194px;
+	top:50px;
+	left:43px;
+    z-index:99;
+	width:572px;
+	height:139px;
 	background:url(../images/pic_slogan.png) no-repeat;
 	text-indent:-9999px}	
 
-#box_services, #box_man, #box_airport, #box_phonecall{ display:block;	position:absolute; z-index:1}
-#box_services{
-	top:230px;
-	right:22px;
-	background: url(../images/pic_service.png) no-repeat;
-	width:788px;
-	height:293px}
-#box_services ul{
-    display: block;
-    position: relative}
-#box_services li{ list-style: none}
-#box_services li a{
-    display: block;
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    text-indent: -9999px}
-#box_services a.play-01{ top:10px; left:110px}
-#box_services a.play-02{ top:100px; left:275px}
-#box_services a.play-03{ top:15px; left:460px}
-#box_services a.play-04{ top:130px; left:620px}
-#box_man{
-	bottom:0;
-	left:0;
-	background: url(../images/pic_man.png) no-repeat;
+#indexTxt, #note, #indexVision{ display:block;	position:absolute; z-index:1; text-indent: -9999px}
+#indexTxt{
+	top:240px;
+	left:55px;
+	background: url(../images/pic_indexTxt.png) no-repeat;
 	width:472px;
 	height:438px}
-#box_airport{
-	top:-5px;
-	left:0;
-	background: url(../images/pic_airport.png) no-repeat;
-	width:515px;
-	height:324px}
-#box_phonecall{
-	bottom:15px;
-	right:28px;
-	background:url(../images/pic_phonecall.png) no-repeat;
-	width:401px;
-	height:50px}	
+#note{
+	bottom:20px;
+	left:120px;
+	background: url(../images/pic_note.png) no-repeat;
+	width:362px;
+	height:170px}
+#indexVision{
+	bottom:0;
+	right:2px;
+	background:url(../images/pic_indexvision.png) no-repeat;
+	width:711px;
+	height:571px}	
 		
 
 /* 2.3 首頁選單 */		
 #box_menu{
 	display:block;
 	position:absolute;
-	top:150px;
-	right:20px;
-	width:700px;
-	height:40px}
+	top:49px;
+	right:24px;
+	border:2px solid #00a1f1;
+	-webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+	width:530px;
+	height:25px;
+	padding:10px 10px}
 #box_menu ul{ display:block; margin:0; padding:0}
-#box_menu li{ list-style: none}
+#box_menu li{ display: inline-block; list-style: none}
 #box_menu li a{
-	display: block;
+	display:block;
 	float:left;
 	height:24px;
 	text-indent:-9999px;
 	background:url(../images/btn_nav.png) no-repeat;
-	margin:0 10px}
+	margin:0 10px;}
 #box_menu a.nav_01{ width:188px; background-position: 0 0}
 #box_menu a.nav_01:hover{ background-position: 0 -24px}
 #box_menu a.nav_02{ width:145px; background-position: 0 -48px}

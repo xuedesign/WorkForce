@@ -169,7 +169,7 @@ footer .txt_ad{
 	background:url(../images/pic_ad.png) no-repeat;
 	text-indent:-9999px}
 
-/*新增動畫效果 #201512*/
+/*動畫效果*/
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -209,7 +209,7 @@ footer .txt_ad{
   }
 }
 
-.fadeInRight {
+.fadeInRight-01{
   -webkit-animation-delay:1s;
 	animation-delay:1s;	
    -webkit-animation-duration: 2s;
@@ -218,34 +218,23 @@ footer .txt_ad{
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight}
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
+.fadeInRight-02{
   -webkit-animation-delay:3s;
 	animation-delay:3s;	
    -webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
-	animation-duration: 2s;	
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn}
+	animation-duration: 2s;			
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight}
+
+.fadeInRight-03{
+  -webkit-animation-delay:5s;
+	animation-delay:5s;	
+   -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+	animation-duration: 2s;			
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight}
 
 @-webkit-keyframes fadeInDown {
   from {
@@ -275,23 +264,7 @@ footer .txt_ad{
   }
 }
 
-.fadeInDown-01{
-  -webkit-animation-delay:5s;
-	animation-delay:5s;	
-   -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-	animation-duration: 1s;	
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown}
-.fadeInDown-02{
-  -webkit-animation-delay:5s;
-	animation-delay:5s;	
-   -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-	animation-duration: 2s;	
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown}
-.fadeInDown-03{
+.fadeInDown{
   -webkit-animation-delay:7s;
 	animation-delay:7s;	
    -webkit-animation-duration: 2s;

@@ -8,8 +8,9 @@
 <link rel="icon" href="images/favicon.ico"/>
 <link rel="stylesheet" href="css/pure-min.css"/>
 <link rel="stylesheet" href="css/xuepage_201602.css"/>
-<link rel="stylesheet" href="css/jquery.fancybox.css"/>
-<link rel="stylesheet" href="css/fancybox-thumbs.css"/>
+<link rel="stylesheet" href="css/flexslider.css">
+<!--<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+<link rel="stylesheet" href="css/fancybox-thumbs.css"/>-->
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -44,8 +45,22 @@
               <div id="box_pageinfo">
             
                 <div id="bar_title"><h3 class="ptitle_01">初聘外勞雇主懶人包</h3></div>
-                <div id="box_main"><!-- 寬度880px -->
-                   
+                <div id="box_main" class="animated fadeInUp"><!-- 寬度880px -->
+                  <!--<a class="fancybox-thumb btn_viewbigshot" href="images/pic-note_01.jpg" data-fancybox-group="item">放大瀏覽</a>-->
+                   <div class="flexslider">
+                      <ul class="slides">
+                          <li><img src="images/pic-note_01.jpg" /></li>
+                          <li><img src="images/pic-note_02.jpg" /></li>
+                          <li><img src="images/pic-note_03.jpg" /></li>
+                          <li><img src="images/pic-note_04.jpg" /></li>
+                          <li><img src="images/pic-note_05.jpg" /></li>
+                          <li><img src="images/pic-note_06.jpg" /></li>
+                          <li><img src="images/pic-note_07.jpg" /></li>
+                          <li><img src="images/pic-note_08.jpg" /></li>
+                          <li><img src="images/pic-note_09.jpg" /></li>
+                          <li><img src="images/pic-note_10.jpg" /></li>
+                      </ul>
+                    </div>   
                 </div><!--//end #box_main-->
               </div>
             </div>
@@ -61,18 +76,22 @@
 </div> 
 
 <script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="script/jquery.fancybox.pack.js"></script>
+<script defer src="script/jquery.flexslider-min.js"></script>
+<script>
+    $(function(){SyntaxHighlighter.all()}),$(window).load(function(){$(".flexslider").flexslider({animation:"slide",start:function(){$("body").removeClass("loading")}})});
+</script>
+<!--<script src="script/jquery.fancybox.pack.js"></script>
 <script>
 $(document).ready(function(){$(".fancybox").fancybox();$(".fancybox-effects-a").fancybox({helpers:{title:{type:"outside"},overlay:{speedOut:0}}});$(".fancybox-effects-b").fancybox({openEffect:"none",closeEffect:"none",helpers:{title:{type:"over"}}});$(".fancybox-effects-c").fancybox({wrapCSS:"fancybox-custom",closeClick:!0,openEffect:"none",helpers:{title:{type:"inside"},overlay:{css:{background:"rgba(238,238,238,0.85)"}}}});$(".fancybox-effects-d").fancybox({padding:0,openEffect:"elastic",openSpeed:150,
 closeEffect:"elastic",closeSpeed:150,closeClick:!0,helpers:{overlay:null}});$(".fancybox-buttons").fancybox({openEffect:"none",closeEffect:"none",prevEffect:"none",nextEffect:"none",closeBtn:!1,helpers:{title:{type:"inside"},buttons:{}},afterLoad:function(){this.title="Image "+(this.index+1)+" of "+this.group.length+(this.title?" - "+this.title:"")}});$(".fancybox-thumbs").fancybox({prevEffect:"none",nextEffect:"none",closeBtn:!1,arrows:!1,nextClick:!0,helpers:{thumbs:{width:50,height:50}}});$(".fancybox-media").attr("rel",
 "media-gallery").fancybox({openEffect:"none",closeEffect:"none",prevEffect:"none",nextEffect:"none",arrows:!1,helpers:{media:{},buttons:{}}});$("#fancybox-manual-a").click(function(){$.fancybox.open("1_b.jpg")});$("#fancybox-manual-b").click(function(){$.fancybox.open({href:"iframe.html",type:"iframe",padding:5})});$("#fancybox-manual-c").click(function(){$.fancybox.open([{href:"1_b.jpg",title:"My title"},{href:"2_b.jpg",title:"2nd title"},{href:"3_b.jpg"}],{helpers:{thumbs:{width:75,height:50}}})})});    
 </script>
 <script src="script/jquery.fancybox-thumbs.js"></script>
-<script src="script/jquery.fancybox-media.js"></script>
+<script src="script/jquery.fancybox-media.js"></script>-->
 <script src="script/jquery.lazyload.js"></script>
 <script src="script/web_set.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+</html>
 <!--
    ##############               ###############   
     ##############             ###############    

@@ -235,6 +235,7 @@ a.btn_viewbigshot:hover{
 	display:block;
 	width:132px;
 	height:132px;
+    overflow: hidden;
 	background:url(../images/icon-Link.png) no-repeat;
 	text-indent:-9999px;
 	margin:0 auto}

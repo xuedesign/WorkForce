@@ -17,21 +17,6 @@ window.onload = externalLinks;
 //      });
 	  
 //Lightbox效果
-$(document).ready(function() {
-  $(".fancybox-thumb").fancybox({
-	  prevEffect	: 'elastic',
-	  nextEffect	: 'elastic',
-	  helpers	: {
-		  title	: {
-			  type: 'inside'
-		  },
-		  thumbs	: {
-			  width	: 50,
-			  height	: 50
-		  }
-	  }
-  });
-});
 
 //頁籤切換效果
 $(function(){

@@ -234,6 +234,10 @@ a.btn_viewbigshot:hover{
 #btn_lang li a:hover{ color: #fff; text-decoration: none}
 
 /* 2.4 表單下載*/
+#link_item-01,
+#link_item-02{ 
+    display: block;
+    clear: both}
 #box_download{
     display: block;
     float: left;
@@ -254,7 +258,8 @@ a.btn_viewbigshot:hover{
     display: block;
     float: right;
     width: 610px;
-    margin-left: 40px;
+    min-height: 128px;
+    margin:0 0 30px 40px;
     padding: 0 30px;
     border: 2px solid rgb(209,183,65);
     background: rgba(209,183,65,.5);
